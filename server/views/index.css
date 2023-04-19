@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/*tag*/
+body {
+  width: 960px;
+  margin: 0 auto;
+  background-color: seashell;
+}
+article {
+  width: auto;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: auto;
+  padding: 50px;
+  overflow: hidden;
+}
+
+/* id css*/
+#title {
+  text-align: center;
+  padding: 50px;
+  font-size: 50px;
+}
+#content {
+  width: auto;
+  height: auto;
+  padding: 10px 30px 30px 30px;
+  margin-top: 30px;
+  border: 3px solid gray;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 0px;
+}
+#sort {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+/* class css */
+.js-searchForm {
+  text-align: center;
+  position: relative;
+  margin-top: 50px;
+}
+.css-searchInput {
+  font-size: 20px;
+  color: black;
+  background-color: rgba(255, 255, 255, 0);
+  padding: 10px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+}
+.js-result {
+  padding-left: 10px;
+  margin-top: 20px;
+}
+.js-movieList {
+  list-style: none;
+}
+.js-movieList li {
+  padding: 50px;
+}
+
+.page {
+  margin-top: 30px;
+  height: 50px;
+  display: none;
+}
+.page li a {
+  text-decoration: none;
+  color: black;
+}
+.pagenation {
+  list-style: none;
+  line-height: 50px;
+  text-align: center;
+}
+.pagenation li {
+  display: inline;
+  text-align: center;
+  display: inline-block;
+}
+.pagenation a {
+  float: left;
+  display: block;
+  font-size: 14px;
+  text-decoration: none;
+  padding: 0 12px;
+}
+.prev:hover,
+.next:hover {
+  color: blue;
+}
+.pagenation a:active {
+  outline: none;
+}
+.js-sortForm {
+  margin-bottom: 20px;
+  display: none;
+  margin-top: 20px;
+}
+.foot {
+  text-align: center;
+  font-size: 10px;
+}

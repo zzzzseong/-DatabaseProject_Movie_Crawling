@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="movieInfo.css" />
+<html>
+  <head>
+    <title>과제 - 랜더링</title>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <h1 class="movie_name">범죄도시2</h1>
+    <img
+      class="poster"
+      src="https://movie-phinf.pstatic.net/20220516_144/1652665409592Chvey_JPEG/movie_image.jpg?type=m203_290_2"
+    />
+    <div class="main-score">
+      <h3>관람객</h3>
+      <div>9.0</div>
+      <h3>기자/평론가</h3>
+      <div>9.0</div>
+      <h3>네티즌</h3>
+      <div>9.0</div>
+    </div>
+    <dl class="info_spec">
+      <dt class="step1"><h3>개요</h3></dt>
+      <dd>
+        <span>범죄, 액션 | </span>
+        <span> 한국 |</span>
+        <span> 106분 |</span>
+        <span> 2022.05.18개봉</span>
+      </dd>
+      <dt class="step2"><h3>감독</h3></dt>
+      <dd>이상용</dd>
+      <dt class="step3"><h3>출연</h3></dt>
+      <dd>마동석(마석도), 손석구(강해상), 최귀화(전일만)</dd>
+      <dt class="step4"><h3>등급</h3></dt>
+      <dd>15세 관람가</dd>
+      <dt class="step5"><h3>흥행</h3></dt>
+      <dd>누적관객 10,909,334명</dd>
+    </dl>
+
+    <input id="menu1" type="radio" name="tab" checked="checked" />
+    <input id="menu2" type="radio" name="tab" />
+    <input id="menu3" type="radio" name="tab" />
+    <input id="menu4" type="radio" name="tab" />
+    <input id="menu5" type="radio" name="tab" />
+    <nav>
+      <label class="menu-item" for="menu1">주요정보</label>
+      <label class="menu-item" for="menu2">배우/제작진</label>
+      <label class="menu-item" for="menu3">포토</label>
+      <label class="menu-item" for="menu4">리뷰</label>
+      <label class="menu-item" for="menu5">명대사</label>
+    </nav>
+
+    <div id="content">
+      <!--#######################################주요정보-->
+      <article>
+        <h2>주요정보</h2>
+      </article>
+      <!--#######################################배우-->
+      <article class="actorPane">
+        <h2>배우</h2>
+        <div class="actorInfo">
+          <img
+            src="https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F202012%2F20201207192857469.jpg&amp;type=u111_139&amp;quality=95"
+          />
+          <div class="InfoSection">
+            <h3>마동석</h3>
+            <div>
+              <p>주연</p>
+              <p>마석도역</p>
+            </div>
+            <ul>
+              <li>범죄도시2</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+      <!--#######################################포토-->
+      <article>
+        <h2>포토</h2>
+      </article>
+      <!--#######################################리뷰-->
+      <article class="reviewPane">
+        <h2>리뷰</h2>
+
+        <h4 class="review_count">총 11건</h4>
+        <div class="js-review">
+          <ul class="reviewList"></ul>
+        </div>
+      </article>
+      <!--#######################################명대사-->
+      <article>
+        <h2>명대사</h2>
+
+        <h4 class="line_count">총 88건</h4>
+        <div class="js-line">
+          <ul class="lineList"></ul>
+        </div>
+      </article>
+    </div>
+  </body>
+  <script src="movieInfo.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <!--for axios-->
+</html>

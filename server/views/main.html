@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="index.css" />
+<html>
+  <head>
+    <title>과제</title>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <h1 id="title">Database Project</h1>
+
+    <form class="js-searchForm">
+      <select>
+        <option selected="selected">제목</option>
+        <option>배우</option>
+        <option>감독</option>
+        <option>장르</option>
+        <option>국가</option>
+      </select>
+      <input
+        class="css-searchInput"
+        type="text"
+        placeholder="Input keyword for serach"
+      />
+    </form>
+
+    <div class="section">
+      <h3 class="js-result"></h3>
+
+      <div id="content">
+        <form class="js-sortForm">
+          <select>
+            <option selected="selected">가나다 정렬</option>
+            <option>년도 정렬</option>
+            <option>평점 정렬</option>
+          </select>
+          <input class="sortButton" type="button" value="정렬" />
+        </form>
+        <article>
+          <ol class="js-movieList"></ol>
+          <div class="page">
+            <ul class="pagenation">
+              <li><a class="prev">이전</a></li>
+              <li><a class="next">다음</a></li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </body>
+  <footer class="foot">
+    <div>2022학년도 1학기 Database Project</div>
+    <div>201811152 강현수 | 201810608 이지환 | 201811295 정지성</div>
+  </footer>
+  <script src="search.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <!--for axios-->
+</html>

@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/*tag*/
+body {
+  width: 960px;
+  background-color: seashell;
+  margin: 0 auto;
+}
+nav {
+  background-color: orange;
+  width: 960px;
+  height: 50px;
+
+  border: 3px solid gray;
+  border-left: 0px;
+  border-right: 0px;
+}
+article > h2 {
+  margin-top: 10px;
+}
+ul {
+  list-style: none;
+}
+
+/*class*/
+.movie_name {
+  margin-top: 30px;
+  margin-left: 10px;
+}
+.menu-item {
+  display: block;
+  width: 180px;
+  height: 50px;
+  margin: 0 30px;
+  text-align: center;
+  line-height: 50px;
+  float: left;
+}
+.actorPane img {
+  margin-right: 30px;
+  float: left;
+}
+.actorInfo {
+  float: left;
+  width: 440px;
+  margin: 20px 0;
+}
+.info_spec {
+  padding: 20px;
+
+  border: 3px solid gray;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 0px;
+}
+.info_spec dd {
+  margin-bottom: 10px;
+}
+.poster {
+  float: right;
+  margin-top: 20px;
+
+  border: 3px solid gray;
+  border-right: 0px;
+}
+.main-score {
+  margin: 20px 0;
+  padding: 20px;
+
+  border: 3px solid gray;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 0px;
+}
+.main-score h3 {
+  display: inline;
+}
+.review_count {
+  height: 40px;
+  line-height: 40px;
+  padding-left: 10px;
+  border: 2px solid gray;
+  border-left: 0px;
+  border-right: 0px;
+  margin-top: 10px;
+}
+.line_count {
+  height: 40px;
+  line-height: 40px;
+  padding-left: 10px;
+  border: 2px solid gray;
+  border-left: 0px;
+  border-right: 0px;
+  margin-top: 10px;
+}
+.reviewList li {
+  padding: 30px;
+  border: 1px solid gray;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 0px;
+}
+.review_title {
+  margin-bottom: 10px;
+}
+.review_title > span {
+  font-size: 20px;
+}
+.review_right {
+  float: right;
+  display: inline;
+  margin-right: 10px;
+}
+.review_right span {
+  font-size: 10px;
+}
+
+.lineList li {
+  padding: 30px;
+  border: 1px solid gray;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 0px;
+  margin-bottom: 50px;
+}
+.line_title div {
+  margin-bottom: 20px;
+}
+.line_img {
+  float: left;
+  margin-right: 20px;
+}
+.line_right {
+  float: right;
+  display: inline;
+  margin-right: 10px;
+}
+.line_right span {
+  font-size: 10px;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-left: 50px;
+  margin-top: 20px;
+}
+.wrapper img {
+  padding: 10px;
+}
+
+/*navigation*/
+input:nth-of-type(1) {
+  display: none;
+}
+article:nth-of-type(1) {
+  display: none;
+}
+input:nth-of-type(1):checked ~ #content > article:nth-of-type(1) {
+  display: block;
+}
+input:nth-of-type(1):checked ~ nav > label:nth-of-type(1) {
+  background-color: black;
+  color: white;
+}
+
+input:nth-of-type(2) {
+  display: none;
+}
+article:nth-of-type(2) {
+  display: none;
+}
+input:nth-of-type(2):checked ~ #content > article:nth-of-type(2) {
+  display: block;
+}
+input:nth-of-type(2):checked ~ nav > label:nth-of-type(2) {
+  background-color: black;
+  color: white;
+}
+
+input:nth-of-type(3) {
+  display: none;
+}
+article:nth-of-type(3) {
+  display: none;
+}
+input:nth-of-type(3):checked ~ #content > article:nth-of-type(3) {
+  display: block;
+}
+input:nth-of-type(3):checked ~ nav > label:nth-of-type(3) {
+  background-color: black;
+  color: white;
+}
+
+input:nth-of-type(4) {
+  display: none;
+}
+article:nth-of-type(4) {
+  display: none;
+}
+input:nth-of-type(4):checked ~ #content > article:nth-of-type(4) {
+  display: block;
+}
+input:nth-of-type(4):checked ~ nav > label:nth-of-type(4) {
+  background-color: black;
+  color: white;
+}
